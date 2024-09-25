@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>QR-CODE GENERATOR</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo-container">
+                <div class="logo-img-container">
+                    <a class="logo-img" href="QR-Code generator.html"><img class="logo"
+                            src="download__1_-removebg-preview.png" alt="Logo"></a>
+                </div>
+                <div class="logo-txt-container">
+                    QR-CODE GENERATOR
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="txt">Welcome to QR-CODE GENERATOR | This project is created using QR code API </div>
+        <div class="container">
+
+
+            <input type="text" class="" placeholder="Enter Text or URL" autocomplete="off" id="qrtext">
+
+            <div id="imgBox"><a href="" id="link"><img id="qr-image" src="" alt="" srcset=""></a></div>
+            <button id="btn" onclick="generateQR()">GENERATE</button>
+        </div>
+    </main>
+
+    <footer id="footer">
+        © 2024 Shayan | All rights reserved.
+    </footer>
+    <script src="index.js"></script>
+</body>
+
+</html>

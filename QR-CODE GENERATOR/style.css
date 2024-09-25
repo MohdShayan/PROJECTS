@@ -1,0 +1,172 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: "Bebas Neue";
+  background-color: rgb(11 18 31);
+  color: white;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+}
+
+nav {
+  width: 100%;
+  height: 70px;
+  background-color: rgb(11 18 31);
+  position: sticky;
+  font-size: 36px;
+  color: white;
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin-top: 8px;
+}
+
+main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  margin: 30px auto;
+}
+
+.container {
+  background-color: rgb(20 29 43);
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 350px;
+  border-radius: 8px;
+  margin: 20px auto;
+}
+
+#qrtext {
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  min-width: 160px;
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 8px;
+  border: 2px solid gray;
+  outline: 0;
+  background-color: #1a2332;
+  color: #a4b1cd;
+  box-sizing: border-box;
+}
+
+#footer {
+  width: 100%;
+  max-height: 25px;
+  letter-spacing: 1.5px;
+  border-top: 1px solid #eaeaec;
+  padding: 16px 0;
+  color: rgb(159 239 0);
+  font-size: 19px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#btn {
+  transition: all 0.3s ease;
+  color: #141d2b;
+  background: #9fef00;
+  cursor: pointer;
+  text-transform: uppercase;
+  border-radius: 4px;
+  padding: 9px;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  min-width: 160px;
+  width: 100%;
+  border: none;
+  box-shadow: 0px 10px 10px rgba(255, 244, 244, 0.1);
+  outline: none;
+  border: none;
+  box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5), 7px 7px 20px 0px rgba(0,0,0,.1), 4px 4px 5px 0px rgba(0,0,0,.1);
+  background: #57cc99;
+  
+}
+
+#btn:hover {
+  background-color: #80ed99;
+}
+#btn:active {
+  top: 2px;
+}
+
+#qrtext:focus {
+  border: 2px solid #9fef00;
+}
+.txt {
+  font-size: 20px;
+  letter-spacing: 1px;
+  margin-top: 0px;
+  background: linear-gradient(90deg, rgb(120 181 12), rgb(5 191 183));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+  flex-wrap: nowrap;
+}
+.logo {
+  display: flex;
+  margin-right: 10px;
+  width: 60px;
+  align-items: center;
+}
+.logo-img {
+  display: flex;
+  align-items: center;
+  font-family: "Hanalei Fill", system-ui;
+  color: white;
+  text-decoration: none;
+  margin: 3px;
+}
+.logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#imgBox {
+  width: 200px;
+  border-radius: 5px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 1s;
+}
+#imgBox img {
+  width: 100%;
+  padding: 10px;
+}
+#imgBox.show-img {
+  max-height: 300px;
+  margin: 10px auto;
+}
+.inperr {
+  animation: shake 0.1s linear 8;
+  border: 2px solid red !important;
+}
+@keyframes shake {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-2px);
+  }
+  50% {
+    transform: translateX(0);
+  }
+  75% {
+    transform: translateX(2px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
